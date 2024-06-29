@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apprentissage des couleurs</title>
+    <style>
+        body {
+            background-image: url("images/colors_bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: purple;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+
+        .colors-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .color {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .color:hover {
+            transform: scale(1.1);
+        }
+
+        .color span {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            font-family: "Arial Black", sans-serif;
+        }
+
+        .red {
+            background-color: #FF6666;
+        }
+
+        .blue {
+            background-color: #6699FF;
+        }
+
+        .yellow {
+            background-color: #FFCC66;
+        }
+
+        .green {
+            background-color: #66CC99;
+        }
+
+        .purple {
+            background-color: #9966CC;
+        }
+
+        .orange {
+            background-color: #FF9966;
+        }
+
+        .audio-bar {
+            width: 100%;
+        }
+
+        .btn {
+            display: block;
+            width: 300px;
+            height: 100px;
+            margin: 20px auto;
+            background-color: purple;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Apprendre les couleurs</h1><br>
+    <br><br>
+
+    <div class="colors-section">
+        <div class="color red" onclick="playAudio('audio-red')">
+            
+            <audio id="audio-red" src="audio/Rouge.mp3"></audio>
+        </div>
+        <div class="color blue" onclick="playAudio('audio-blue')">
+           
+            <audio id="audio-blue" src="audio/Bleu.mp3"></audio>
+        </div>
+        <div class="color yellow" onclick="playAudio('audio-yellow')">
+            
+            <audio id="audio-yellow" src="audio/jaune.mp3"></audio>
+        </div>
+        <div class="color green" onclick="playAudio('audio-green')">
+           
+            <audio id="audio-green" src="audio/Vert.mp3"></audio>
+        </div>
+        <div class="color purple" onclick="playAudio('audio-purple')">
+            
+            <audio id="audio-purple" src="audio/Violet.mp3"></audio>
+        </div>
+        <div class="color orange" onclick="playAudio('audio-orange')">
+            
+            <audio id="audio-orange" src="audio/orange.mp3"></audio>
+        </div>
+    </div>
+    <br>
+
+    <script>
+
+        function playAudio(audioId) {
+            var audio = document.getElementById(audioId);
+            var progressBar = document.getElementById("progress-" + audioId);
+
+            audio.play();
+
+        }
+    </script>
+    <a class="btn" href="test1.php">Test</a>
+</body>
+</html>
+
+

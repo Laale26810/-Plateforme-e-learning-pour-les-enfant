@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Apprendre les Formes Géométriques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+        color: #ff6600;
+    }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #8a4baf; /* Violet clair */
+            margin-top: 20px;
+        }
+
+        .header {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center; /* Centrer le contenu du header */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 10px;
+            background-color: #8a4baf; /* Violet clair */
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .search {
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .search input[type="text"] {
+            width: 200px;
+            padding: 5px;
+        }
+
+        .search input[type="submit"] {
+            padding: 5px 10px;
+            background-color: #8a4baf; /* Violet clair */
+            color: #fff;
+            border: none;
+        }
+
+    
+    .shape {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        display: inline-block;
+    }
+    h1,h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #8a4baf; /* Violet clair */
+            margin-top: 20px;
+        }
+    
+    .circle {
+        background-color: red;
+        border-radius: 50%;
+    }
+    
+    .square {
+        background-color: blue;
+    }
+    
+    .triangle {
+        background-color: yellow;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+    
+    .rectangle {
+        background-color: green;
+        width: 250px;
+        height: 200px; /* Ajout de la hauteur pour uniformiser avec les autres formes */
+    }
+    
+    video {
+        width: 100%;
+        max-width: 600px; /* Ajustement de la largeur maximale pour une meilleure adaptation aux écrans */
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
+    
+    .btn {
+        margin-top: 20px; /* Ajout d'une marge supérieure pour espacer le bouton du contenu précédent */
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #ff6600;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none; /* Suppression du soulignement du lien */
+        display: inline-block; /* Changement de l'affichage en ligne pour que le bouton s'adapte à son contenu */
+    }
+</style>
+</head>
+<body>
+    <h1>Apprendre les Formes Géométriques</h1>
+    <div class="header">
+        <ul>
+            <li><a href="contact.php" class="button">Contact</a></li>
+            <li><a href="login.php" class="button">Logout</a></li>
+        </ul>
+        <form method="get" class="search">
+            <input type="text" name="search" placeholder="Rechercher...">
+            <input type="submit" value="Rechercher">
+        </form>
+
+    </div>
+    <h2>Connais-tu ces formes géométriques ?</h2>
+  
+<div class="shape square"></div>
+<div class="shape circle"></div>
+<div class="shape triangle"></div>
+<div class="shape rectangle"></div>
+
+<h2>Regarder la Vidéo, puis procédez au test.</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d-T5tmv_87g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+
+
+
+<a class="btn" href="geom.html">Commencer le Test</a>
+</body>
+</html>

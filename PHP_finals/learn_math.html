@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("images/math_back.jpg");
+            background-size: 100%; /* pour ajuster l'image à la taille de l'écran */
+            background-repeat: no-repeat; /* pour empêcher la répétition de l'image */
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #8a4baf; /* Violet clair */
+            margin-top: 20px;
+        }
+        .header {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center; 
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        a.button {
+            display: inline-block;
+            padding: 10px;
+            background-color: #8a4baf; /* Violet clair */
+            color: #fff;
+            text-decoration: none;
+        }
+        .search {
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .search input[type="text"] {
+            width: 200px;
+            padding: 5px;
+        }
+        .search input[type="submit"] {
+            padding: 5px 10px;
+            background-color: #8a4baf; /* Violet clair */
+            color: #fff;
+            border: none;
+        }
+        .container {
+            text-align: center;
+            margin-top: 20px; /* Ajouter un espace entre le header et le contenu principal */
+        }
+        .container a.button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background-color: #8a4baf; /* Violet clair */
+            color: #fff;
+            text-decoration: none;
+        }
+        .container img {
+            display: block;
+            width: 350px;
+            height: 400px;
+            margin-bottom: 10px;          
+        }
+    </style>    
+</head>
+<body>
+    <h1>MATHS</h1>
+    <div class="header">
+        <ul>
+            <li><a href="contact.php" class="button">Contact</a></li>
+            <li><a href="login.php" class="button">Logout</a></li>
+        </ul>
+        <form method="get" class="search">
+            <input type="text" name="search" placeholder="Rechercher...">
+            <input type="submit" value="Rechercher">
+        </form>
+        
+    </div>
+    <div class="container">
+        <a href="learn_forms.html" class="button">
+            <img src="images\geom.jpg" alt="Géométrie">
+            Geometrie
+        </a>
+        <a href="learn_calculus.html" class="button">
+            <img src="images\calculator.jpg" alt="Calculus">
+            Calcul
+        </a>
+        
+    </div>
+
+</body>
+</html>

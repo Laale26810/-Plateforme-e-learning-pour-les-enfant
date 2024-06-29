@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formes Géométriques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #8a4baf; /* Violet clair */
+            margin-top: 20px;
+        }
+
+        .header {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center; /* Centrer le contenu du header */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        a.button {
+            display: inline-block;
+            padding: 10px;
+            background-color: #8a4baf; /* Violet clair */
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .search {
+            margin-top: 10px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .search input[type="text"] {
+            width: 200px;
+            padding: 5px;
+        }
+
+        .search input[type="submit"] {
+            padding: 5px 10px;
+            background-color: #8a4baf; /* Violet clair */
+            color: #fff;
+            border: none;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 20px; /* Ajouter un espace entre le header et le contenu principal */
+        }
+
+        .container a.button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background-color: #8a4baf; /* Violet clair */
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container img {
+            display: block;
+            width: 350px;
+            height: 400px;
+            margin-bottom: 10px;
+          
+        }
+    </style>
+</head>
+<body>
+    <h1>Apprendre les Formes Géométriques</h1>
+    
+
+    <div class="shape square"></div>
+    <div class="shape circle"></div>
+    <div class="shape triangle"></div>
+    <div class="shape rectangle"></div>
+    
+    <h2>Test</h2>
+    <form action="result.php" method="POST">
+        <p>Sélectionne la forme géométrique correcte pour chaque couleur :</p>
+        <ul>
+            <li>
+                <label for="blue">Bleu :</label>
+                <select name="blue" id="blue">
+                    <option value="circle">Cercle</option>
+                    <option value="square">Carré</option>
+                    <option value="triangle">Triangle</option>
+                    <option value="rectangle">Rectangle</option>
+                </select>
+            </li>
+            <li>
+                <label for="red">Rouge :</label>
+                <select name="red" id="red">
+                    <option value="circle">Cercle</option>
+                    <option value="square">Carré</option>
+                    <option value="triangle">Triangle</option>
+                    <option value="rectangle">Rectangle</option>
+                </select>
+            </li>
+            <li>
+                <label for="yellow">Jaune :</label>
+                <select name="yellow" id="yellow">
+                    <option value="circle">Cercle</option>
+                    <option value="square">Carré</option>
+                    <option value="triangle">Triangle</option>
+                    <option value="rectangle">Rectangle</option>
+                </select>
+            </li>
+            <li>
+                <label for="green">Vert :</label>
+                <select name="green" id="green">
+                    <option value="circle">Cercle</option>
+                    <option value="square">Carré</option>
+                    <option value="triangle">Triangle</option>
+                    <option value="rectangle">Rectangle</option>
+                </select>
+            </li>
+        </ul>
+        <input type="submit" value="Soumettre">
+    </form>
+</body>
+</html>
